@@ -76,7 +76,10 @@ int main(int argc, char *argv[]){
     String command = S(argv[1]);
 
     if(streq(command, S("init")) == 1){
-        printf("Initiating gitFromAlibaba repo...\n");
+        if(argc > 2){
+            printf("Too many args for 'init' command.\n");
+            return 1;
+        }
 
         if(directory_exists(".gitFromAlibaba")){
             printf("Repository already exists.\n");

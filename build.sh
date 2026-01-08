@@ -3,7 +3,7 @@
 CC=clang
 CFLAGS="-O3 -Wall -mavx2 -msse4.2"
 SRC_DIR="src"
-OUTPUT="gitFromAlibaba.exe"
+OUTPUT="gitFromAlibaba"
 
 $CC $CFLAGS "$SRC_DIR"/*.c -o $OUTPUT
 
