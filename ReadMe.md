@@ -1,0 +1,1 @@
+Yes as of now the macro S("some_string") leaks memory, this will go away when we include arena memory management.
